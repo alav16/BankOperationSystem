@@ -20,6 +20,7 @@ namespace BankOper.Data.Injection
             services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
 
             services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IClientRepository, ClientRepository>();
 
             return services;
         }

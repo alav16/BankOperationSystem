@@ -18,6 +18,7 @@ namespace BankOper.Business.Injection
             services.AddDataLayer(config);
 
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IClientService, ClientService>();
 
             return services;
         }
